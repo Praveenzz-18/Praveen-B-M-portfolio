@@ -22,12 +22,14 @@ Tactical Success at IIT Mandi
 Led campus-wide strategic outreach for national entrepreneurship research.
 Mobilized 100+ elite recruits (innovators) across campus networks.
 Coordinated with National Command Teams to drive global research participation.
+
 🏛️ Event Coordinator | Persona+ Mysore
 Bridging the gap between academic theory and industry reality.
 Orchestrating technical workshops and industry expert sessions for 200+ students.
+
 🛠️ Technological Arsenal
 Frontend: React, TypeScript, Tailwind CSS
-Backend: Python, FastAPI, Supabase
+Backend: Python, FastAPI, firebase
 Specialized: AI/ML, GPS Integration, Weather APIs
 🚀 Deployment
 Built with a focus on visual excellence and premium design. This portfolio uses high-tech animations and a dark-mode aesthetic to represent the commitment to professional excellence.
