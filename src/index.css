@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Batman-themed design system with Gotham aesthetics
+All colors MUST be HSL for theming consistency
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Gotham Dark Palette - Backend matched to dark moody cyan/blue */
+    --background: 220 50% 4%;
+    --foreground: 45 100% 90%;
+    
+    /* Batman Dark Cards */
+    --card: 220 50% 6%;
+    --card-foreground: 45 100% 90%;
+    
+    --popover: 220 50% 6%;
+    --popover-foreground: 45 100% 90%;
+    
+    /* Batman Yellow Primary - richer classic gold */
+    --primary: 43 96% 56%;
+    --primary-foreground: 220 50% 4%;
+    
+    /* Dark Secondary */
+    --secondary: 220 50% 12%;
+    --secondary-foreground: 45 100% 90%;
+    
+    --muted: 220 30% 15%;
+    --muted-foreground: 220 20% 60%;
+    
+    /* Batman Yellow Accent */
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 3%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 45 100% 95%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 10%;
+    --ring: 45 100% 50%;
+    
+    --radius: 0.5rem;
+    
+  /* Batman-specific colors */
+    --batman-yellow: 43 96% 56%;
+    --batman-yellow-foreground: 220 50% 4%;
+    --gotham-dark: 220 50% 2%;
+    --neon-glow: 185 80% 40%;
+    --bat-shadow: 220 50% 8%;
+    
+    /* Gradients */
+    --gradient-batman: linear-gradient(135deg, hsl(220 50% 4%) 0%, hsl(220 50% 8%) 50%, hsl(220 50% 4%) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(185 80% 40%) 0%, hsl(185 80% 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 50% 2%) 0%, hsl(220 50% 8%) 100%);
+    
+    /* Shadows & Glows */
+    --shadow-batman: 0 10px 30px -10px hsl(220 50% 2% / 0.8);
+    --shadow-neon: 0 0 20px hsl(185 80% 40% / 0.4);
+    --glow-intense: 0 0 30px hsl(185 80% 40% / 0.7);
+    
+    /* Animations */
+    --transition-batman: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode is the default Gotham theme */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-rajdhani;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Batman-specific utility classes */
+  .text-batman-yellow {
+    color: hsl(var(--batman-yellow));
+  }
+  
+  .bg-batman-yellow {
+    background-color: hsl(var(--batman-yellow));
+  }
+  
+  .text-neon-glow {
+    color: hsl(var(--neon-glow));
+  }
+  
+  .bg-gotham-dark {
+    background-color: hsl(var(--gotham-dark));
+  }
+  
+  .gradient-batman {
+    background: var(--gradient-batman);
+  }
+  
+  .gradient-neon {
+    background: var(--gradient-neon);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-batman {
+    box-shadow: var(--shadow-batman);
+  }
+  
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .glow-intense {
+    box-shadow: var(--glow-intense);
+  }
+  
+  .transition-batman {
+    transition: var(--transition-batman);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+  
+  /* Animation classes */
+  .animate-bat-swoop {
+    animation: bat-swoop 0.6s ease-out;
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+  
+  .animate-text-glow {
+    animation: text-glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out;
+  }
+}
+
+@keyframes bat-swoop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(185 80% 40% / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(185 80% 40% / 0.8);
+  }
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 10px hsl(43 96% 56% / 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px hsl(43 96% 56% / 0.9), 0 0 30px hsl(43 96% 56% / 0.5);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
