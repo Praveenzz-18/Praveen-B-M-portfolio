@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+🦇 Praveen B M - Batman Portfolio
+Welcome to the Batcomputer Archives. This is the professional dossier and portfolio of Praveen B M, a Computer Science Engineer dedicated to protecting the digital frontier through innovative technology.
 
-## Project info
+📁 Case Files (Projects)
+🛰️ AgriNex
+Mission: Precision Farming Micro-Forecasting
 
-**URL**: https://lovable.dev/projects/63d8b45d-5d0d-4668-baed-afa2615ea52d
+Hyper-local weather forecasting (2/5/10km zones) for temperature, humidity, and rainfall.
+AI-driven crop prediction and soil NPK estimation.
+Goal: Empowering Indian farmers with precision technology and zonal alerts.
+Source Code
+🚛 Smart Army Logistics
+Mission: Army Convoys Pulse
 
-## How can I edit this code?
+Intelligent convoy planning and real-time tracking for the Indian Army.
+AI-powered route optimization and fleet lifecycle management.
+Features: 24/7 GPS tracking, smart alerts, and comprehensive analytics.
+🎖️ Active Missions (Experience)
+🎓 GUESSS INDIA 2025 | Campus Ambassador
+Tactical Success at IIT Mandi
 
-There are several ways of editing your application.
+Led campus-wide strategic outreach for national entrepreneurship research.
+Mobilized 100+ elite recruits (innovators) across campus networks.
+Coordinated with National Command Teams to drive global research participation.
+🏛️ Event Coordinator | Persona+ Mysore
+Bridging the gap between academic theory and industry reality.
+Orchestrating technical workshops and industry expert sessions for 200+ students.
+🛠️ Technological Arsenal
+Frontend: React, TypeScript, Tailwind CSS
+Backend: Python, FastAPI, Supabase
+Specialized: AI/ML, GPS Integration, Weather APIs
+🚀 Deployment
+Built with a focus on visual excellence and premium design. This portfolio uses high-tech animations and a dark-mode aesthetic to represent the commitment to professional excellence.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/63d8b45d-5d0d-4668-baed-afa2615ea52d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/63d8b45d-5d0d-4668-baed-afa2615ea52d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Setup
+Clone the archives: git clone https://github.com/Praveenzz-18/Praveen-B-M-portfolio.git
+Install dependencies: npm install
+Launch the Batcomputer: npm run dev
+Created by Praveen B M 
